@@ -1,5 +1,5 @@
 class Interface
-  attr_assessor :player, :dealer, :bank, :deck
+  attr_accessor :player, :dealer, :bank, :deck
 
   def initialize
     print 'Введите свое имя:'
