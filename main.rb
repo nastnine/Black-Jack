@@ -64,7 +64,7 @@ class Interface
   end
 
   def dealer_move
-    @dealer.add_card(desk) if @dealer.card_points < 17
+    @dealer.add_card(deck) if @dealer.card_points < 17
   end
 
   def open_cards
