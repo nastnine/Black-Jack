@@ -14,7 +14,7 @@ class Interface
     @player.zero_out
     @dealer.zero_out
     @deck = Deck.new
-    @deck.shuffle_cards!
+    @deck.shuffle_cards
     2.times do
       @player.draw_a_card(@deck)
       @dealer.draw_a_card(@deck)
