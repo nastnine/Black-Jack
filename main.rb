@@ -16,8 +16,8 @@ class Interface
     @deck = Deck.new
     @deck.shuffle_cards
     2.times do
-      @player.draw_a_card(@deck)
-      @dealer.draw_a_card(@deck)
+      @player.add_card(deck)
+      @dealer.add_card(deck)
     end
     @player.make_bet
     @dealer.make_bet
