@@ -7,9 +7,9 @@ class Player
     @cards = []
   end
 
-  def add_card(desk)
+  def add_card(deck)
     validate!
-    @cards << desk.draw_a_card
+    @cards << deck.draw_a_card
   end
 
   def zero_out
