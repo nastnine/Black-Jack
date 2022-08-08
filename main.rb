@@ -34,7 +34,7 @@ class Interface
       skip_move
       open_cards
     when 2
-      @player.draw_a_card(@deck)
+      @player.add_card(deck)
       dealer_move
       open_cards
     when 3
