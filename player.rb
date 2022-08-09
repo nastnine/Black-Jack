@@ -21,7 +21,7 @@ class Player
   end
 
   def validate!
-    raise 'Вы не можете взять карту' if @card.size == 3
+    raise 'Вы не можете взять карту' if @cards.size == 3
   end
 
   def card_points
