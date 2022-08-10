@@ -50,12 +50,12 @@ class Interface
   end
 
   def user_cards
-    @player.each { |card| print "#{card.suit} #{card.picture}" }
+    @player.cards.each { |card| print "#{card.suit} #{card.picture}" }
     puts "Ваши очки: #{@player.card_points}"
   end
 
   def dealer_cards
-    @dealer.each { |card| print "#{card.suit} #{card.picture}" }
+    @dealer.cards.each { |card| print "#{card.suit} #{card.picture}" }
     puts "Количество очков Dealer: #{@dealer.card_points}"
   end
 
