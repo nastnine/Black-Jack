@@ -21,7 +21,7 @@ class Interface
     end
     @player.make_bet
     @dealer.make_bet
-    @bank = 20
+    @bank += 20
     option_game
   end
 
