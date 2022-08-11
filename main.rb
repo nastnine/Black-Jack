@@ -72,7 +72,25 @@ class Interface
     user_cards
     dealer_cards
     calculation_results
+    balance
+    reset_bank
     new_round
+  end
+  
+  def balance
+    puts "#{@player.name}, Ваш баланс: #{@player.money}"
+    puts "Dealer баланс: #{@dealer.money}"
+    if @player.money < 10
+      puts 'Вы не можете больше сделать ставку!'
+      new_round
+    elsif @dealer.money < 10
+      puts 'ПОБЕДА!'
+      new_round
+    end
+  end
+
+  def reset_bank
+    @bank = 0
   end
 
   def calculation_results
